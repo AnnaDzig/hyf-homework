@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+/* ---------------------------header----------------------- */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    background-color: #1E2939;
+    padding: 20px;
+}
+
+.navbar a {
+   text-decoration: none;  
+}
+
+.navbar__list {
+    display: flex;
+    gap: 20px;    
+}
+
+.navbar__list-item a {
+   height: 50px;
+   background-color: #FB6D3A;
+   border-radius: 0 25px 0px 0;
+}
+
+.navbar__list-item a:hover {
+    background-color: #ffff;
+    z-index: 2;
+}
+
+.navbar__link {
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.navbar__link:hover {
+    color: #FB6D3A;
+}
+
+/* ---------------------------aside block----------------------- */  
+
+.left-side-block {
+    width: 30% ;
+    background-color: #1E2939;
+}
+
+.photo {
+    padding: 0px 50px 50px; 
+}
+
+.side-section {
+   padding: 20px; 
+}
+
+.title {
+    color: #ffff;
+    margin-bottom: 15px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #FB6D3A; 
+}
+
+.contacts__list-item {
+    color: #ffff;   
+}
+
+.contacts__link { 
+    text-decoration: none;
+}
+
+.contacts-img {
+    width: 50px;
+    height: 50px;
+}
+
+.contacts__link-item {
+    color: #ffff;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.skills__list {
+    padding-left: 20px;
+}
+
+.skills__item {
+    color: #ffff;
+    line-height: 1.5;
+}
+
+.bullet::before {
+    content: "\2022";
+    color: #FB6D3A;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+/* ---------------------------main----------------------- */  
+
+.main {
+    display: flex;
+}
+
+.main-block {
+    width: 70%;
+    padding: 50px 20px 10px 50px;
+}
+
+.some-section {
+    margin-bottom: 30px;
+}
+
+.first-title {
+    margin: 10px 10px;
+    font-size: 2em;
+    color: #010000;
+}
+
+.title-color {
+    color: #010000;
+}
+
+.description {
+    padding: 20px 0 20px 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.education__item {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.education__link {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #595959;   
+}
+
+.education-degree {
+    margin: 0;
+    color: #FB6D3A;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.table-row {
+    display: flex;
+}
+
+.table-row:nth-child(2) {
+    background-color: #e6e6e6;
+}
+
+.table-data {
+    padding: 10px;
+}
+
+.table-data:nth-child(1) {
+    width: 30%;
+    max-width: 180px;
+    border-right: 1px solid #3b3b3b;
+}
+
+.table-list {
+    padding-bottom: 10px; 
+}
+
+.experience-date {
+    font-size: 1em; 
+}
+
+.experience-description {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #e6e6e6;
+    min-height: 50px;
+    padding: 10px;
+}
+
+.experience-description-item {
+    font-weight: 400;
+    padding-left: 50px;
+    background-color: #f7f3f3;
+}
+
+.works__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.works__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    color: #010000;
+    text-decoration: none;
+      transition: transform 0.3 ease 0s;
+    overflow: hidden;
+}
+
+.works__link:hover {
+    transform: scale(1.2);
+}
+
+/* ---------------------------footer----------------------- */
+
+.footer__container {
+    background-color: #FB6D3A;   
+}
+
+.footer-title {
+    text-align: center;
+    padding: 20px 350px 20px 0;
+}
+
+.footer-item {
+     display: flex;
+     align-items: center;
+     justify-content:flex-end;
+}
+
+.footer__link {
+    color: #ffff;
+    text-decoration: none;
+    }
+
+.footer__img {
+        padding: 10px;
+    }
