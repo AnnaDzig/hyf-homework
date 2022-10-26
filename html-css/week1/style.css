@@ -183,7 +183,7 @@ li{
     display: flex;
 }
 
-.table-row:nth-child(2) {
+.table-row:nth-child(2n) {
     background-color: #e6e6e6;
 }
 
