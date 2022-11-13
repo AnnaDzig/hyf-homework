@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="container">     
+        <div class="logo">
+            <img src="./img/Logo.svg" alt="logo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">Clothes</li>
+                <li class="nav-item">Shoes</li>
+                <li class="nav-item">Accessories</li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="container">
+        <div class="sign-up-block">
+            <h1 class="title">Sign up to Safari.com</h1>
+            <h2 class="step">Step 4/4 - Payment</h2>
+            <h3 class="lables">Progress</h3>
+            <div id="progress" class="progress-field">
+                <div class="progress-filling"></div>
+            </div>
+            <p>Please fill in your payment data</p>
+        </div>
+        <form action="#" method="POST" class="form container">
+            <div class="container" >
+                <div class="form-lines">
+                     <div class="field-items">
+                   <label class="lables" for="card">Name on card</label>
+                <input class="form-input" required id="cardl" autocomplete="on" name="card" type="text"> 
+                </div>
+                <div class="field-items"> 
+                    <label class="lables" for="card">Card type</label>    
+                <select name="card-type" id="card-type">
+                    <option value="master-card">MasterCard</option>
+                    <option value="visa">Visa</option>
+                </select></div>
+                <div class="field-items"> 
+                    <label class="lables" for="card-number">Credit card number</label>
+                <input class="form-input" id="card-numbe" autocomplete="on" name="card-numbe" type="number">
+                </div>
+                <div class="field-items">
+                   <label class="lables" for="card-name">First name</label>
+                   <input class="form-input" id="card-name" autocomplete="on" name="card-name" type="text">
+                </div>
+                <div class="field-items">
+                    <label class="lables" for="expirity-month">Expiry month</label>
+                    <select name="expirity-month" id="expirity-month">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                 </div>
+                 <div class="field-items">
+                    <label class="lables" for="txpirity-year">Expiry year</label>
+                    <input class="form-input" id="txpirity-year" autocomplete="on" name="txpirity-year" type="number" min="2022">
+                 </div>
+                 <div class="field-items">
+                    <label class="lables" for="ccv">CCV</label>
+                    <input class="form-input" id="ccv" autocomplete="off" name="ccv" type="number" min="111">
+                 </div>
+                 <div class="button-step-4">
+                   <button class="button" type="button">Next step</button> 
+                 </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
