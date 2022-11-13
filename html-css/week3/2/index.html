@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-3</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="container">     
+        <div class="logo">
+            <img src="./img/Logo.svg" alt="logo">
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">Clothes</li>
+                <li class="nav-item">Shoes</li>
+                <li class="nav-item">Accessories</li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="container">
+        <div class="sign-up-block">
+            <h1 class="title">Sign up to Safari.com</h1>
+            <h2 class="step">Step 2/4 - how can we reach you?</h2>
+            <h3 class="lables">Progress</h3>
+            <div id="progress" class="progress-field"></div>
+            <p>We will probably need to stay in touch somehaw. Let is know how we can reach you?</p>
+        </div>
+        <form action="#" method="POST" class="form container">
+            <div class="container" >
+                <div class="form-lines">
+                     <div class="field-items">
+                   <label class="lables" for="email">Email*</label>
+                <input class="form-input" required id="email" autocomplete="on" name="email" type="email"> 
+                    <label class="lables" for="password">Password*</label>
+                <input class="form-input" id="last-name" autocomplete="on" name="password" type="password">
+                </div>
+                <div class="field-items">
+                   <label class="lables" for="re-enter-password">Re-enter Password*</label>
+                   <input class="form-input" id="re-enter-password" autocomplete="on" name="re-enter-password" type="password">
+                </div>
+                <div class="field-items">
+                    <label class="lables" for="phone">Phone</label>
+                    <input class="form-input" id="phone" autocomplete="on" name="phone" type="tel">
+                 </div>
+                <p>I want to sign up for the newsletter</p>
+                  <div class="radio-block">
+                    <div class="checkbox"> 
+                    <label for="weekly" class="lables checkbox-label"><span class="checkbox-text">Weekly news</span></label>
+                    <input checked  id="weekly" required autocomplete="off" value="weekly" name="news" type="radio">
+                </div>
+                <div class="checkbox"> 
+                    <label for="monthly" class="lables checkbox-label"><span class="checkbox-text">Monthly news</span></label>
+                    <input checked  id="monthly" required autocomplete="off" value="monthly" name="news" type="radio">
+                </div>
+                <div class="checkbox"> 
+                    <label for="never" class="lables checkbox-label"><span class="checkbox-text">Don't send news</span></label>
+                    <input checked  id="never" required autocomplete="off" value="never" name="news" type="radio">
+                </div>  
+                <button class="button" type="button">Next step</button>
+                </div> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>
