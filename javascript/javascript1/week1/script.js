@@ -15,3 +15,13 @@ console.log(`Your dog will be ${dogYear} human years old in ${dogYearFuture}`);
 } else {
     console.log(`Your dog will be ${dogYearFuture - dogYearOfBirth} dogs years old in ${dogYearFuture}`);  
 }
+
+//A house price estimation 
+let wideMeters = 8;
+let deepMeters = 10;
+let highMeters = 10;
+let gardenSizeInMeter2 = 100;
+let volumeInMeters = wideMeters * deepMeters * highMeters;
+let housePrice = volumeInMeters * 2.5 * 1000 + gardenSizeInMeter2 * 300;
+console.log(housePrice);
+if (housePrice <)
