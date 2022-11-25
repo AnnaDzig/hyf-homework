@@ -31,3 +31,9 @@ if (housePrice < houseCosts) {
     console.log('You are paying too little!')
 }
 
+//Name generator
+const firstWords = ["Furry ","Fancy ","Sparkling ","Magnificent ","Bright ","Colorfull ","High ", "Easy ", "Awesome ", "Corporate "];
+const secondWords = ["way ","group ","union ","season ","time ","fruit ","mix ","link" ,"story" ,"jorney ","ocean "];
+const randomNumber = Math.floor(Math.random()*10);
+let startapName = firstWords[randomNumber] + secondWords[randomNumber];
+console.log("The startup: \""+startapName+"\" contains " + startapName.length + " characters");
