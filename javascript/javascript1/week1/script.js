@@ -7,7 +7,7 @@ console.log(`You will be ${age} years old in ${yearFuture}`)
 //A dog age calculator 
 const dogYearOfBirth = 2020;
 let dogYearFuture = 2045;
-let dogYear = (dogYearFuture - dogYearOfBirth)/2*10;
+let dogYear = (dogYearFuture - dogYearOfBirth) * 5;
 let shouldShowResultInDogYears = false;
 
 if(shouldShowResultInDogYears) {
@@ -34,6 +34,6 @@ if (housePrice < houseCosts) {
 //Name generator
 const firstWords = ["Furry ","Fancy ","Sparkling ","Magnificent ","Bright ","Colorfull ","High ", "Easy ", "Awesome ", "Corporate "];
 const secondWords = ["way ","group ","union ","season ","time ","fruit ","mix ","link" ,"story" ,"jorney ","ocean "];
-const randomNumber = Math.floor(Math.random()*10);
+const randomNumber = Math.floor(Math.random()*firstWords.length);
 let startapName = firstWords[randomNumber] + secondWords[randomNumber];
 console.log("The startup: \""+startapName+"\" contains " + startapName.length + " characters");
