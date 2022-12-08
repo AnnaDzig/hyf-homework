@@ -38,3 +38,23 @@ if(typeof event === 'number') {
 getEventWeekday(12)
 
 
+//Weather wear
+const clothesToWear = temperatureOutside;
+
+function temperatureOutside(temperature) {
+    if (typeof(temperature) != 'number'){
+        advice = 'incorrect';
+    } else if (temperature < 0) {
+        advice = 'It is freezing outside, put on gloves, a scarf, a warm jacket and a hat'
+    } else if (temperature <= 10) {
+        advice = 'It is cold outside, put on a jacket'
+    } else if (temperature <= 15){
+        advice = 'It is pretty warm  outside, you do not need to put on your jacket'
+    } else {
+        advice = 'It is hot  outside, take off your clothes and go to the beach '
+    }
+
+    return advice;
+}
+
+temperatureOutside(18)
