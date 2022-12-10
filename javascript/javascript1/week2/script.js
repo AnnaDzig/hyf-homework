@@ -68,7 +68,7 @@ function getNumberOfStudents() {
 function addStudentToClass(studentName) {
 
     if (studentName) {
-        // Check if the class is full
+        // if the class is full
         if (class07Students.length < 6) {
             if (class07Students.includes(studentName)) {
                 return alert ("Student " + studentName + " already existed in class 07");
@@ -77,7 +77,7 @@ function addStudentToClass(studentName) {
                 return class07Students;
             }
         } else {
-            // Add Queen to the class even if the class is full
+            // Add Queen 
             if (studentName === "Queen") {
                 class07Students.push(studentName);
                 return class07Students;
@@ -90,3 +90,43 @@ function addStudentToClass(studentName) {
     }
 
 }
+
+//Candy helper
+
+const boughtCandyPrices = [];
+const table = {
+    "sweet": 0.5,
+    "chocolate": 0.7,
+    "toffee": 1.1,
+    "chewing-gum": 0.03
+};
+
+let amountToSpend = Math.random() * 100;
+
+function addCandy(candyType, weight) { 
+  if (table.hasOwnProperty(candyType)) {
+      boughtCandyPrices.push(table[candyType] * weight);
+      return boughtCandyPrices;
+  }
+  return "Incorrect";  
+}
+function canBuyMoreCandy() {
+  let index = 0;
+  let sum = 0;
+  while (index < boughtCandyPrices.length) {
+      sum += boughtCandyPrices[index];
+      index++;
+  }
+  
+  if (amountToSpend > sum) {
+      console.log("You can buy more, so please do!");
+  } else {
+      console.log("Enough candy for you!");
+  }
+
+}
+console.log(addCandy("mint", 10));
+console.log(addCandy("toffee", 50));
+console.log(addCandy("chewing-gum", 10));
+console.log(addCandy("chocolate", 40));
+canBuyMoreCandy();
