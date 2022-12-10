@@ -58,3 +58,35 @@ function temperatureOutside(temperature) {
 }
 
 temperatureOutside(18)
+
+//Student manager 
+
+const class07Students = [];
+function getNumberOfStudents() {
+  return class07Students.length
+}
+function addStudentToClass(studentName) {
+
+    if (studentName) {
+        // Check if the class is full
+        if (class07Students.length < 6) {
+            if (class07Students.includes(studentName)) {
+                return alert ("Student " + studentName + " already existed in class 07");
+            } else {
+                class07Students.push(studentName);
+                return class07Students;
+            }
+        } else {
+            // Add Queen to the class even if the class is full
+            if (studentName === "Queen") {
+                class07Students.push(studentName);
+                return class07Students;
+            } else {
+                return alert ("Cannot add more students to class 07");
+            }
+        }
+    } else {
+        return alert ("Please enter student name");
+    }
+
+}
