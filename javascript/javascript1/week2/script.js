@@ -92,7 +92,7 @@ function addStudentToClass(studentName) {
 }
 
 //Candy helper
-
+unique
 const boughtCandyPrices = [];
 const table = {
     "sweet": 0.5,
