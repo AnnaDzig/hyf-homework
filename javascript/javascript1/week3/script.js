@@ -70,8 +70,47 @@ const names = [
     for (let i = 0; i < seriesDurations.length; i++) {
       let hoursTime = seriesDurations[i].days * 24 + seriesDurations[i].hours;
       let persentOfLife = hoursTime * 100 / ageInHours;
-      console.log(`${seriesDurations[i].title} took ${persentOfLife} % of my life`);
+      console.log(`${seriesDurations[i].title} took ${persentOfLife.toFixed(3)} % of my life`);
       }
     }
   
   logOutSeriesText(); // logs out the text found above
+
+
+  //NOnoN0nOYes (Note taking app)
+
+  const notes = [];
+
+function saveNote(content, id) {
+  notes.push({"content": content, "id": id})// write some code here
+}
+
+saveNote("Pick up groceries", 1);
+saveNote("Do laundry", 2);
+
+console.log(notes); // [{content: 'Pick up groceries', id: 1}, {content: 'Do laundry', id: 2}]
+
+
+//_____Get a note___________
+
+function getNote(id) {
+  for (let i = 0; i < notes.length; i++){
+    if (notes[1].id === id || id !== Number){
+      return notes[i];
+    } else return "Error"; 
+    } }
+ 
+const firstNote = getNote(1);
+console.log(firstNote); // {content: 'Pick up groceries', id: 1}
+
+//______Log out notes_______
+
+function logOutNotesFormatted() {
+  for (let i = 0; i < notes.length; i++){
+    return console.log(`The note with id: ${notes[i].id}, has the following note text: ${notes[i].content}`)// your code here
+}
+}
+logOutNotesFormatted(); // should log out the text below
+
+// The note with id: 1, has the following note text: Pick up groceries
+// The note with id: 2, has the following note text: Do laundry.
