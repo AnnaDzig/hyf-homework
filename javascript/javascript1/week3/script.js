@@ -110,7 +110,43 @@ function logOutNotesFormatted() {
     return console.log(`The note with id: ${notes[i].id}, has the following note text: ${notes[i].content}`)// your code here
 }
 }
-logOutNotesFormatted(); // should log out the text below
+logOutNotesFormatted(); 
 
-// The note with id: 1, has the following note text: Pick up groceries
-// The note with id: 2, has the following note text: Do laundry.
+//CactusIO-interactive (Smart phone usage app) optional
+
+const activities = [];
+const date = new Date().toLocaleString();
+
+function addActivity(date, activity, duration){
+if (typeof activity === "string" && typeof duration === "number"){
+  activities.push({"date": date, "activity": activity, "duration": duration});
+  return activities;
+} else {
+  return "Error!!!"
+}
+}
+
+addActivity("23/7-18", "Youtube", 30);
+/*
+activities should now look like this
+[{
+    date: '23/7-18',
+    activity: 'Youtube',
+    duration: 30,
+}]
+*/
+
+function showStatus() {
+  let allTime = 0;
+
+  for (let i = 0; i < activities.length; i++){
+    allTime += activities[i].duration;  
+    if (activities.length === 0) {
+    console.log("Add some activities before calling showStatus")
+  } else {
+    return `You have added ${activities[i].activity} activities. They amount to ${allTime} min. of usage`
+
+  }
+  }
+}
+showStatus(activities)
