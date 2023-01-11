@@ -59,3 +59,13 @@ console.log(getReply('What day is it today?'))
 console.log(getReply('what is 6 * 10'))
 console.log(getReply('what is 6 + 10'))
 console.log(getReply('Set a timer for 0.1 minutes'))
+
+
+//-----------------------------
+
+const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
+findShortestDanishWord(danishWords); // returns 'ø'
+function shortestDanishWord(danishWords) {
+    danishWords.map(a => a.length);
+    
+}
